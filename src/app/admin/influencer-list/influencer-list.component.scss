@@ -1,0 +1,30 @@
+.list{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 3px 20px 10px 0;
+  .list-item{
+    width: 20%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    mat-card-titile{
+      font-size: 20px;
+      color: teal;
+      text-align: center;
+    }
+    .new_influencer{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      input{
+        font-family: 'Roboto';
+        border: 1px solid gray;
+        border-radius: 2px;
+        height: 25px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

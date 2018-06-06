@@ -1,0 +1,16 @@
+<div class="list">
+  <mat-card class="list-item" *ngFor="let influencer of influencers">
+    <mat-card-header>
+      <mat-card-title>User ID: {{influencer.id}}</mat-card-title>
+    </mat-card-header>
+    <div class="new_influencer">
+      <input type="text" value="{{influencer.attributes.Name}}">
+      <input type="text" value="{{influencer.attributes.Surename}}">
+      <input type="text" value="{{influencer.attributes.Email}}">
+      <input type="text" value="{{influencer.attributes.Phone}}">
+      <input type="text" value="{{influencer.attributes.Instagram}}">
+      <input type="text" value="{{influencer.attributes.Youtube}}">
+    </div>
+      <button mat-stroked-button>Save changes</button>
+  </mat-card>
+</div>

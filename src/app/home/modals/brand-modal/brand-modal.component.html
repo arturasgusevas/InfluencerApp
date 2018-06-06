@@ -1,0 +1,29 @@
+<section class="regform">
+  <h1 mat-dialog-title>Brand registration form</h1>
+  <div class="brand-submit" mat-dialog-content>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.name" matInput placeholder="Name" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.surename" matInput placeholder="Surename" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.brandname" matInput placeholder="Brand" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.email" matInput type="email" placeholder="Email" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.phone" matInput type="tel" placeholder="Phone" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.date" matInput type="date" placeholder="Project date">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.budget" matInput placeholder="Budget">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-stroked-button mat-dialog-close (click)="submitBrandForm()">SUBMIT</button>
+  </div>
+</section>

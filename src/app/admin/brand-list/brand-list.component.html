@@ -1,0 +1,17 @@
+<div class="list">
+  <mat-card class="list-item" *ngFor="let brand of brands">
+    <mat-card-header>
+      <mat-card-title>User ID: {{brand.id}}</mat-card-title>
+    </mat-card-header>
+    <div class="new_brand">
+      <input type="text" value="{{brand.attributes.Name}}">
+      <input type="text" value="{{brand.attributes.Surename}}">
+      <input type="text" value="{{brand.attributes.Brandname}}">
+      <input type="text" value="{{brand.attributes.Email}}">
+      <input type="text" value="{{brand.attributes.Phone}}">
+      <input type="text" value="{{brand.attributes.Date}}">
+      <input type="text" value="{{brand.attributes.Budget}}">
+    </div>
+      <button mat-stroked-button>Save changes</button>    
+  </mat-card>
+</div>

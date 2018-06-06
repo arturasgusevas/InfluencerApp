@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400|Roboto');
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto';
+}
+
+.space {
+  flex: 1 1 auto;
+  cursor: pointer;
+}
+
+mat-form-field{
+  width: 400px;
+  height: 70px;
+}
+
+.regform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}

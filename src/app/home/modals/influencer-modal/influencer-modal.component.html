@@ -1,0 +1,26 @@
+<section class="regform">
+  <h1 mat-dialog-title>Influencer registration form</h1>
+  <div class="influ-submit" mat-dialog-content>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.name" matInput placeholder="Name" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.surename" matInput placeholder="Surename" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.email" matInput type="email" placeholder="Email" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.phone" matInput type="tel" placeholder="Phone nr." required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.instagram" matInput placeholder="Instagram nickname">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input [(ngModel)]="post.youtube" matInput placeholder="Youtube nickname">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-stroked-button mat-dialog-close (click)="submitInfluencerForm()">SUBMIT</button>
+  </div>
+</section>
