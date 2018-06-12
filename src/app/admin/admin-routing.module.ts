@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from '../core/auth.guard';
 
 import { BrandListComponent } from './brand-list/brand-list.component';
 import { InfluencerListComponent } from './influencer-list/influencer-list.component';
@@ -11,7 +10,7 @@ import { AdminComponent } from '../admin/admin.component';
 import { HomeComponent } from './../home/home.component';
 
 const routes: Routes = [
-  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard],
+  { path: 'admin', component: AdminComponent,
     children: [
       { path: 'registration', component: RegistrationComponent },
       { path: 'campaigns', component: CampaignComponent },

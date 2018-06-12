@@ -27,10 +27,6 @@ import { MatInputModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { NgForm } from '@angular/forms';
 
-import { AuthService } from './core/auth.service';
-import { AuthGuard } from './core/auth.guard';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +54,7 @@ import { AuthGuard } from './core/auth.guard';
     ReactiveFormsModule,
     AdminModule
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [],
   entryComponents: [InfluencerModalComponent, BrandModalComponent],
   bootstrap: [AppComponent]
 })

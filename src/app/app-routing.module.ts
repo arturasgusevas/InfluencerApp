@@ -7,7 +7,6 @@ import { InfluencerComponent } from './influencer/influencer.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AdminComponent } from './admin/admin.component';
-import { AuthGuard } from './core/auth.guard';
 
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -17,7 +16,7 @@ const routes: Routes = [
   { path: 'brand', component: BrandComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard]}
+  { path: 'admin', component: AdminComponent }
 ]
 
 @NgModule({
